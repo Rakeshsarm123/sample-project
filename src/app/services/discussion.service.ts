@@ -9,6 +9,8 @@ export class DiscussionService {
  
 
 httpOptions:any;
+  apiUrl: any;
+  headers: HttpHeaders | { [header: string]: string | string[]; } | undefined;
 constructor(private http:HttpClient) { }
 
 getReviews():Observable<any> {
@@ -21,4 +23,7 @@ this.httpOptions = new HttpHeaders({
 })
 return this.http.post("http://localhost:4500/forum",obj,this.httpOptions);
 }
-  }
+removeDietPlan (id:any): Observable<any>{
+  return this.http.delete(`${this.apiUrl}nutrition/${id}`, { headers: this.headers });
+ }
+}
