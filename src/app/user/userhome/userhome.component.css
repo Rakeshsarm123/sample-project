@@ -1,0 +1,144 @@
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav li {
+    margin-left: 1rem;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Main Styles */
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .intro p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .recipes {
+    margin-top: 2rem;
+  }
+  
+  .recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .recipe-list li {
+    width: calc(33.33% - 1rem);
+    margin-bottom: 2rem;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  
+  .recipe-list li img {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .recipe-info {
+    padding: 1rem;
+  }
+  
+  .recipe-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .recipe-info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  
+  .footer .logo img {
+    height: 40px;
+  }
+  
+  .footer .nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .footer .nav li {
+    margin-left: 1rem;
+  }
+  
+  .footer .nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  

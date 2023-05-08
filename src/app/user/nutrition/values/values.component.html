@@ -1,0 +1,17 @@
+
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{c.Food}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="http://localhost/{{c.image}}" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <a routerLink="/{{c.id}}">Details</a>
+        <p>
+            {{c.Category}}<br>
+            {{c.Food}}
+            {{c.Quantity}}
+        </p>
+       </mat-card-content>
+     </mat-card>
+
+     
