@@ -9,23 +9,26 @@ import { AdminModule } from './admin/admin.module';
 import { UserModule } from './user/user.module';
 import { MaterialModule } from './material/material.module'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from './shared/shared.module';
+import { AfilterPipe } from './pipes/afilter.pipe';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    UserModule,
     HttpClientModule,
     FormsModule,
     MaterialModule,
-    AdminModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

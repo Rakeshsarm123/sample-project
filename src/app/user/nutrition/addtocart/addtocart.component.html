@@ -1,0 +1,40 @@
+<div class="container">
+    <table class='table table-trapped'>
+        <thead>
+            <tr>
+                <th>FOOD</th>
+                <th>CATEGORY</th>
+                <th>MEASURE</th>
+                <th>GRAMS</th>
+                <th>CALORIES</th>
+                <th>PROTEIN</th>
+                <th>FAT</th>
+                <th>FIBER</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let x of items">
+                
+                <td>{{ x.Food }}</td>
+                <td>{{ x.Category }}</td>
+                <td>{{ x.Measure }}</td>
+                <td>{{ x.Grams }}</td>
+                <td>{{ x.Calories }}</td>
+                <td>{{ x.Protein }}</td>
+                <td>{{ x.Fat }}</td>
+                <td>{{ x.Fiber }}</td>
+                <td>
+                    <button (click)="removeItem(x.Food)" class="btn btn-danger">
+                        <i class="material-icons">delete</i>
+                    </button>
+                </td>
+            </tr>
+            <p>Total calories: {{cal}}</p>
+            
+             <p>Total protient :{{pro}}</p>
+             <p>Total FAT :{{fat}}</p>
+             <p>Total Fiber :{{Fiber}}</p>
+        </tbody>
+    </table>
+</div>

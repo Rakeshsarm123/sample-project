@@ -1,6 +1,6 @@
 .example-card {
     max-width: 300px;
-    height: 400px;
+    height: 450px;
     margin: 20px;
     float:left;
   }
@@ -34,7 +34,7 @@ h1 {
   color: #fff;
 }
 
-a{
+.button{
   background-color: green;
   background-image:green;
   border-radius: 5px;

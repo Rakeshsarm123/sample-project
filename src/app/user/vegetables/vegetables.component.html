@@ -1,4 +1,3 @@
-<app-header></app-header>
 <div class="container" *ngFor="let x of reviews"> 
     <div class="header">  
      <p>{{x.name | uppercase}} said !!!</p>
@@ -12,20 +11,20 @@
 <th>Name:</th>
 <td><input type="text" formControlName="name"></td>
 <td>
-<div *ngIf='reviewForm.controls.name.hasError("required")'>
-    Should be filled</div>
-<div *ngIf='reviewForm.controls.name.hasError("minlength")'>
-    Atleast Three Characters long</div>
+<!-- <div *ngIf='reviewForm.controls.name.hasError("required")'>
+    Should be filled</div> -->
+<!-- <div *ngIf='reviewForm.controls.name.hasError("minlength")'>
+    Atleast Three Characters long</div> -->
 </td>
 </tr><br>
 <tr>
 <th>Email</th>
 <td><input type="text" formControlName="email"></td>
 <td>
-<div *ngIf='reviewForm.controls.email.hasError("required")'>
-Should be filled</div>
-<div *ngIf='reviewForm.controls.email.hasError("pattern")'>
-    Should be in email format</div>
+<!-- <div *ngIf='reviewForm.controls.email.hasError("required")'>
+Should be filled</div> -->
+<!-- <div *ngIf='reviewForm.controls.email.hasError("pattern")'>
+    Should be in email format</div> -->
 </td>
 </tr><br>
 <tr>
@@ -33,10 +32,10 @@ Should be filled</div>
 <td><textarea rows=3 cols=30 formControlName="message">
 </textarea></td>
 <td>
-<div *ngIf='reviewForm.controls.message.hasError("required")'>
+<!-- <div *ngIf='reviewForm.controls.message.hasError("required")'>
 Should be filled</div>
 <div *ngIf='reviewForm.controls.message.hasError("minlength")'>
-    Atleast 15 characters long</div>
+    Atleast 15 characters long</div> -->
 </td>
 
 </tr><br>

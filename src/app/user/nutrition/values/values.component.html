@@ -5,12 +5,13 @@
     </mat-card-header>
     <img mat-card-image src="http://localhost/{{c.image}}" alt="Photo of a Shiba Inu">
     <mat-card-content>
-      <a routerLink="/{{c.id}}">Details</a>
+      <button class="button"(click)="navigateToDetails()" >Details</button>
         <p>
             {{c.Category}}<br>
             {{c.Food}}
             {{c.Quantity}}
         </p>
+        <button class="button"(click)="addToCart(c)">add to cart</button>
        </mat-card-content>
      </mat-card>
 

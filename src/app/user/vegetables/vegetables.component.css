@@ -1,93 +1,60 @@
-/* Overall Styles */
+.container {
+  margin: 20px;
+}
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: green;
-    color: white;
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Header Styles */
-  
-  .header {
-    background-color: green;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .header h1 {
-    font-size: 24px;
-    margin: 0;
-    color: green;
-  }
-  
-  /* Navigation Styles */
-  
-  .navbar {
-    background-color: #777;
-    padding: 10px;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .navbar li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .navbar a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Main Content Styles */
-  
-  .main-content {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  /* Forum Post Styles */
-  
-  .post {
-    background-color: green;
-    border: 1px solid green;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
- 
-  
-  /* Form Styles */
-  
-  .rform-group {
-    margin-bottom: 10px;
-  }
-  
-  .rform-group label {
-    display: block;
-    font-weight: bold;
-  }
-  
-  .rform input[type="text"],
-  .rform textarea {
-    width: 100%;
-    padding: 5px;
-  }
-  
-  .rform button {
-    background-color: green;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    cursor: pointer;
-  }
+.header {
+  background-color: #f0fff0; /* Light green background for header */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.header p:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header p:last-child {
+  font-style: italic;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.rform {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+table th {
+  background-color: #00ff00; /* Green background for table header */
+  color: #fff; /* White text color for table header */
+  padding: 8px;
+  text-align: left;
+}
+
+table td {
+  padding: 8px;
+}
+
+form textarea {
+  width: 100%;
+}
+
+button {
+  background-color: #00ff00; /* Green background for button */
+  color: #fff; /* White text color for button */
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc; /* Gray background for disabled button */
+  cursor: not-allowed;
+}

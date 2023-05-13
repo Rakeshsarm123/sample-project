@@ -1,0 +1,61 @@
+/* Set green as the major color */
+/* Set green as the major color */
+body {
+  color: #000; /* Set the text color to black */
+  background-color: green; /* Set the background color to green */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+.green-form {
+  width: 350px; /* Adjust as needed */
+  padding: 20px;
+  background-color: white; /* Set form background color to a lighter shade of green */
+  border: 1px solid green; /* Set form border color to green */
+  color: #000; /* Set form text color to black */
+}
+
+.green-form label {
+  color: green0; /* Set label text color to green */
+}
+
+.green-form .form-control {
+  background-color: white; /* Set input background color to a lighter shade of green */
+  border-color: green0; /* Set input border color to green */
+  color: #000; /* Set input text color to black */
+}
+
+.green-form .btn-danger {
+  background-color: green0; /* Set button background color to green */
+  border-color: green0; /* Set button border color to green */
+  color: #fff; /* Set button text color to white */
+}
+
+.green-form .btn-danger:hover {
+  background-color: #008000; /* Set button background color to dark green on hover */
+  border-color: #008000; /* Set button border color to dark green on hover */
+}
+
+.green-form .bx {
+  background-color: #f0fff0; /* Set select dropdown background color to a lighter shade of green */
+  border-color: green0; /* Set select dropdown border color to green */
+  color: #000; /* Set select dropdown text color to black */
+}
+
+.green-form .form-group {
+  display: flex;
+  align-items: center;
+}
+.green-form .form-group label {
+  flex: 0 0 120px; /* Adjust the width of the labels as needed */
+  margin-right: 10px; /* Add some spacing between the label and input */
+}
+
+.green-form .form-control {
+  flex: 1; /* Allow the input to grow and fill the remaining space */
+}

@@ -16,4 +16,5 @@ export class NutritionService {
    getDetails(id: any):Observable<any>{
     return this.http.get("http://localhost:4500/nutrition/"+id)
    }
+   
 }

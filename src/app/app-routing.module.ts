@@ -5,17 +5,17 @@ import { NutritionComponent } from './user/nutrition/nutrition.component';
 import { VegetablesComponent } from './user/vegetables/vegetables.component';
 import { DetailsComponent } from './user/nutrition/details/details.component';
 import { ContactComponent } from './user/contact/contact.component';
+import { DietplanComponent } from './user/dietplan/dietplan.component';
+import { DietPlanFormComponent } from './admin/diet-plan-form/diet-plan-form.component';
 
 const routes: Routes = [
   {path:"login",component:LoginComponent},
   {path:"user",
   loadChildren:() => import('./user/user.module').then(m => m.UserModule)},
   {path:"admin",loadChildren: 
-  () => import('./admin/admin.module').then(m => m.AdminModule)},
-  {path:"Nutrition",component:NutritionComponent},
-  {path:"Vegetables",component:VegetablesComponent},
-  {path:":id",component:DetailsComponent},
-  {path:"contact",component:ContactComponent}
+  () => import('./admin/admin.module').then(m => m.AdminModule)}
+  
+
   
 ];
 

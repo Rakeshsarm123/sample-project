@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NutritionService } from '../../services/nutrition.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-details',
@@ -10,27 +10,11 @@ import { ActivatedRoute } from '@angular/router';
 export class DetailsComponent {
   id:any;
   details:any;
-  constructor(private Ds:NutritionService,private ar:ActivatedRoute){
-    this.ar.params.subscribe(
-      {
-        next:(params)=>{
-          this.id=params['id']
-          this.readData()
-},
+  state:any;
+  constructor(private Ds:NutritionService,private ar:ActivatedRoute,private router:Router){
+    this.state=router.getCurrentNavigation()?.extras.state
+    this.details=this.state;
 
-error:()=>this.id=0
 
- }
-)
 }
-readData(){
-this.Ds.getDetails(this.id).subscribe(
- {
-next:(data:any)=>this.details=data,
-error:()=>this.details={}
-}
-)
-}
-
-
 }

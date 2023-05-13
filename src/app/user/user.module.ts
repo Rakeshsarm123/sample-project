@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserhomeComponent } from './userhome/userhome.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from '../shared/header/header.component';
 import { NutritionComponent } from './nutrition/nutrition.component';
 import { ValuesComponent } from './nutrition/values/values.component';
 import { DetailsComponent } from './nutrition/details/details.component';
@@ -13,6 +12,11 @@ import { FilterPipe } from '../pipes/filter.pipe';
 import { MaterialModule } from '../material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
+import { DietplanComponent } from './dietplan/dietplan.component';
+import { DiettypeComponent } from './dietplan/diettype/diettype.component';
+import { TypedetailsComponent } from './dietplan/typedetails/typedetails.component';
+import { SharedModule } from '../shared/shared.module';
+import { AddtocartComponent } from './nutrition/addtocart/addtocart.component';
 
 
 
@@ -27,9 +31,19 @@ const route:Routes=[
     {
       path: "",
       component: UserhomeComponent
-    }
+    },
+  {path:"Nutrition",component:NutritionComponent},
+  {path:"contact",component:ContactComponent},
+  {path:"dietplan",component:DietplanComponent},
+  {path:"Vegetables",component:VegetablesComponent},
+  {path:"details",component:DetailsComponent},
+  {path:"addtocart",component:AddtocartComponent},
+  {path:":id",component:DetailsComponent}
+  
   ]
-}
+  
+
+},
 
 ]
 
@@ -38,12 +52,15 @@ const route:Routes=[
     HomeComponent,
     FilterPipe,
     UserhomeComponent,
-    HeaderComponent,
     NutritionComponent,
     ValuesComponent,
     DetailsComponent,
     VegetablesComponent,
-    ContactComponent
+    ContactComponent,
+    DietplanComponent,
+    DiettypeComponent,
+    TypedetailsComponent,
+    AddtocartComponent
     
   ],
   imports: [
@@ -52,7 +69,8 @@ const route:Routes=[
     FormsModule,
     MaterialModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ]
 })
 export class UserModule { }

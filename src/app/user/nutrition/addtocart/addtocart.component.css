@@ -1,0 +1,36 @@
+.container {
+    margin: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #00ff00; /* Green background for table header */
+    color: #fff; /* White text color for table header */
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f0fff0; /* Lighter shade of green for even rows */
+  }
+  
+  .btn-danger {
+    background-color: #ff0000; /* Red background for delete button */
+    color: #fff; /* White text color for delete button */
+    border: none;
+    padding: 4px 8px;
+  }
+  
+  .btn-danger:hover {
+    background-color: #cc0000; /* Darker shade of red on hover */
+  }
+  
